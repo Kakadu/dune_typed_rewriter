@@ -9,3 +9,5 @@ Module `B` depends on `A` and is preprocessed by a rewriter above.
 **Issue**: In `./dune` file I neeed to pass ugly option to my rewriter to make module `A` discoverable.
 
 **Question**: How to do better?
+
+To test: `dune build A.cma lib1.cma`
