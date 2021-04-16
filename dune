@@ -1,0 +1,15 @@
+(library
+ (name A)
+ (modules A)
+ (wrapped false)
+ )
+
+
+(library
+ (name lib1)
+ (libraries A)
+ (modules B)
+ (wrapped false)
+ (preprocess (per_module
+             ((action (run %{project_root}/rewriter/rewriter1.exe -I .A.objs/byte %{input-file})) B) )
+             ))

@@ -1,0 +1,5 @@
+(executable
+ (name rewriter1)
+ ;(public_name rewriter1)
+ (modules rewriter1)
+ (libraries compiler-libs.common))
